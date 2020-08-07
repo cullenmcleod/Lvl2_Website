@@ -1,0 +1,137 @@
+<!doctype html>
+
+<head>
+    <title>The Release</title>
+    <link rel="stylesheet" href="styles.css">
+
+<script>
+    var option = ['chances of acid rain today rember your protection enchanted clothing ', 'fine with a chance of overcarst till 3pm then', 'chances of mist around 2pm today but otherwise clear for the rest of the day day']
+
+
+
+    window.onload = function() {
+        document.getElementById('text').innerHTML = option[0];
+    }
+
+    setInterval(testing, 10000);
+
+    function testing() {
+        var rand = Math.floor(Math.random() * option.length);
+        document.getElementById('text').innerHTML = option[rand];
+    }
+
+</script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="page">
+            <h1 class="news">crystals sales</h1>
+            <div class="crystals">
+
+                <h1> basic crystals</h1>
+                <ul class="shopping">
+                    <li>
+                        <img src="Images/crystals_1_earth.jpg" alt="crystals_1_earth">
+                        <p>Price $50</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_1_fire.jpg" alt="fcrystals_1_fireire1">
+                        <p>Price $50</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_1_lighting.jpg" alt="light1">
+                        <p>Price $50</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_1_shadow.jpg" alt="shadow1">
+                        <p>Price $50</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_1_water.jpg" alt="water1">
+                        <p>Price $50</p>
+                    </li>
+                </ul>
+
+                <h1> standard crystals</h1>
+                <ul class="shopping">
+                    <li>
+                        <img src="Images/crystals_2_earth.jpg" alt="earth2">
+
+                        <p>Price $75</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_2_fire.jpg" alt="fire2">
+
+                        <p>Price $75</p>
+                    </li>
+                    <li>
+
+                        <img src="Images/crystals_2_lighting.jpg" alt="light2">
+                        <p>Price $$$</p>
+                    </li>
+                    <li>
+
+                        <img src="Images/crystals_2_shadow.jpg" alt="shadow2">
+                        <p>Price $75</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_2_water.jpg" alt="water2">
+
+                        <p>Price $75</p>
+                    </li>
+                </ul>
+
+                <h1> star crystals</h1>
+                <ul class="shopping">
+                    <li>
+                        <img src="Images/crystals_3_earth.jpg" alt="earth3">
+
+                        <p>Price: $120</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_3_fire.jpg" alt="fire3">
+
+                        <p>Price: $120</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_3_lighting.jpg" alt="light3">
+
+                        <p>Price: $120</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_3_shadow.jpg" alt="shadow3">
+
+                        <p>Price: $120</p>
+                    </li>
+                    <li>
+                        <img src="Images/crystals_3_water.jpg" alt="water3">
+
+                        <p>Price: $120</p>
+                    </li>
+                </ul>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="menu">
+        <div class="container">
+            <div class="left">
+                <li><a href="index.html">new lease city news</a> </li>
+                <li><a href="crystal.html">crystals</a></li>
+                <li> <a href="enchant.html">enchanments</a></li>
+            </div>
+            <div class="right">
+                <button onclick="testing()">weather</button>
+                <p id="text"></p>
+            </div>
+        </div>
+
+    </nav>
+</body>

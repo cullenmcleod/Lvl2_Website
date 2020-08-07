@@ -1,0 +1,81 @@
+<!doctype html>
+
+<head>
+    <title>The Release</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+
+<script>
+    var option = ['chances of acid rain today rember your protection enchanted clothing ','fine with a chance of overcarst till 3pm then','chances of mist around 2pm today but otherwise clear for the rest of the day day']
+    
+     
+    window.onload = function(){
+        document.getElementById('text').innerHTML = option[0];
+    }
+    
+    setInterval(testing, 10000);
+
+    function testing() {
+        var rand = Math.floor(Math.random() * option.length);
+        document.getElementById('text').innerHTML = option[rand];
+    }
+
+</script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="page">
+            <h1 class="news">Todays News</h1>
+            <section>
+
+                <p class="news_heading">4 star s-rank tower cleared.</p>
+                <p class="new_main"> A S gate cleared by the manhatten
+                    unit in a new record time of 2hours
+                    and 43min. beating the perviuse
+                    record by 26 mins. </p>
+
+                <p class="news_heading">new level of mana crystal have been found.</p>
+                <p class="new_main"> workers have now discoverd star class crystals which now give us the capabelitys for greater enchantments and less power comsumtion to the main power grid.</p>
+                
+                <p class="news_heading">Acid rain?</p>
+                <p class="new_main"> studies have found sinces the release the rain has become more acidic scinetist are now working on enchantment to help protect aganst the rain as it becomes more and more acidic.</p>
+                
+                
+             
+            </section>
+            <h1 class="news2">20 year annervesry of mana release</h1>
+            <div class="section2">
+                <p>it been 20 years since what we the release.
+                    the release was a golble event cause by
+                    the discovery of mana infused crystals.
+                    when these crystal were mined they
+                    reseased a sreage of mana thrugh the
+                    earth causing to towers to rise from deep
+                    in the earths core to rise up through the
+                    ground releases monsters into the
+                    world evey 12 days. now we have teams
+                    of releasers who help combat the towers.</p>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <nav class="menu">
+        <div class="container">
+            <ul div class="left">
+                <li><a href="index.html">new lease city news</a> </li>
+                <li><a href="crystal.html">crystals</a></li>
+                <li> <a href="enchant.html">enchanments</a></li>
+            </ul>
+            <div class="right">
+                <button onclick="testing()">weather</button>
+                <p id="text"></p>
+            </div>
+        </div>
+
+    </nav>
+</body>

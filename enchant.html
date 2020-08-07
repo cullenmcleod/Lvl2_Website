@@ -1,0 +1,86 @@
+<!doctype html>
+
+<head>
+    <title>The Release</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        var option = ['chances of acid rain today rember your protection enchanted clothing ', 'fine with a chance of overcarst till 3pm then', 'chances of mist around 2pm today but otherwise clear for the rest of the day day']
+
+
+
+        window.onload = function() {
+            document.getElementById('text').innerHTML = option[0];
+        }
+
+        setInterval(testing, 10000);
+
+        function testing() {
+            var rand = Math.floor(Math.random() * option.length);
+            document.getElementById('text').innerHTML = option[rand];
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <!--  pearnt for grids     -->
+        <div class="page">
+            <!--  iner grid for page    -->
+            <h1 class="news">ehcant sales</h1>
+            <div class="crystals">
+
+                <h1> books</h1>
+                <ul class="shopping">
+                    <!--  sales items   -->
+                    <li>
+                        <img src="Images/earth_book.jpg" alt="earth3">
+
+                        <p>Price: $1205</p>
+                    </li>
+                    <li>
+                        <img src="Images/fire_book.jpg" alt="fire3">
+
+                        <p>Price: $1250</p>
+                    </li>
+                    <li>
+                        <img src="Images/lighting_book.jpg" alt="light3">
+
+                        <p>Price: $1200</p>
+                    </li>
+                    <li>
+                        <img src="Images/shadow_book.jpg" alt="shadow3">
+
+                        <p>Price: $1020</p>
+                    </li>
+                    <li>
+                        <img src="Images/water_book.jpg" alt="water3">
+
+                        <p>Price: $1500</p>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="menu">
+        <!-- lower main grid -->
+        <div class="container">
+            <!-- holds nav and weather -->
+            <ul class="left">
+                <li><a href="index.html">new lease city news</a> </li>
+                <li><a href="crystal.html">crystals</a></li>
+                <li> <a href="enchant.html">enchanments</a></li>
+            </ul>
+            <div class="right">
+                <button onclick="testing()">weather</button>
+                <p id="text"></p>
+            </div>
+        </div>
+
+    </nav>
+</body>
